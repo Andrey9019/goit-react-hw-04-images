@@ -15,5 +15,6 @@ export const featchItem = async (page, query) => {
   });
 
   const response = await axios.get(`?${params}`);
+  console.log(response.data);
   return response.data;
 };
