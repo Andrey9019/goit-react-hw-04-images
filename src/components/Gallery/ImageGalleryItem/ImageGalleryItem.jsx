@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { PhotoCard, PhotoCardIMG } from './ImageGalleryItem.style';
 import { ModalContainer } from 'components/Modal/Modal';
 
-export const ImageGalleryItem = (webformatURL, largeImageURL, tags) => {
+export const ImageGalleryItem = ({webformatURL, largeImageURL, tags}) => {
 
 const [isModalOpen, setIsModalOpen] = useState(false)
 
